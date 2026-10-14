@@ -1,0 +1,21 @@
+# 统一换行符：仓库内一律 LF，避免跨平台协作时整文件 diff
+* text=auto eol=lf
+
+# Windows 专用脚本保留 CRLF
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# gradlew 必须是 LF —— 被转成 CRLF 后在 Linux/macOS 上会直接执行失败
+gradlew text eol=lf
+
+# 二进制文件不做任何转换
+*.png binary
+*.jpg binary
+*.webp binary
+*.ttf binary
+*.otf binary
+*.so binary
+*.jar binary
+*.apk binary
+*.aab binary
+*.keystore binary

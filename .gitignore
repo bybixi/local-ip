@@ -1,0 +1,19 @@
+*.iml
+.gradle/
+.kotlin/
+/local.properties
+/.idea/
+.DS_Store
+# 注意：必须是 build/ 而不是 /build ——
+# 带前导斜杠只匹配仓库根目录，盖不住 app/build（会把构建产物全提交上去）
+build/
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+*.jks
+*.keystore
+
+# 构建产物不入库（APK 走 GitHub Releases 分发）
+*.apk
+*.aab
